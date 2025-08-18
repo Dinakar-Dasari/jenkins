@@ -1,9 +1,9 @@
 // pipeline {
-//     agent { label "agent-11" }
+//     agent { label "agent-11" }  ---> matching label will run this build
 
-//     stages {
-//         stage('Build') {
-//             steps {
+//     stages {   ---> it can have one or multiple stages
+//         stage('Build') {   ---> stage 1
+//             steps {    ---> it can have multiple steps
 //                 echo 'Building..'
 //             }
 //         }
@@ -30,5 +30,11 @@ pipeline{
                 echo "Hello guru..!"
             }
         }
+    }
+
+    post { 
+    always { 
+        echo 'I will always say Hello again!'
+        deleteDir()
     }
 }
