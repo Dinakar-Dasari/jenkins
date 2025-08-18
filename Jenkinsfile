@@ -23,11 +23,13 @@
 
 
 pipeline{
-        agent {label "agent-11"}
+    agent {label "agent-11"}
     stages{
         stage('Dinakar'){
             steps {
-                echo "Hello guru..!"
+                script {   // scripting So, this becomes scripting + declarative
+                    echo "scripting"   
+                }
             }
         }
     }
@@ -35,7 +37,7 @@ pipeline{
     post { 
         always { 
             echo 'I will always say Hello again!'
-            deleteDir()
+            deleteDir() // --> this will delete the files in workspace directory in agent
         }
     }
 
