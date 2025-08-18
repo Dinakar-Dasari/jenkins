@@ -1,20 +1,33 @@
-pipeline {
-    agent { label "agent-11" }
+// pipeline {
+//     agent { label "agent-11" }
 
-    stages {
-        stage('Build') {
+//     stages {
+//         stage('Build') {
+//             steps {
+//                 echo 'Building..'
+//             }
+//         }
+//         stage('Test') {
+//             steps {
+//                 echo 'Testing..'
+//             }
+//         }
+//         stage('Deploy') {
+//             steps {
+//                 echo 'Deploying....'
+//             }
+//         }
+//     }
+// }
+
+
+
+pipeline{
+        agent {label "agent-11"}
+    stages{
+        stage('Dinakar'){
             steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                echo "Hello guru..!"
             }
         }
     }
