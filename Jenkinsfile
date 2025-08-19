@@ -28,7 +28,8 @@ pipeline{
         stage('Dinakar'){
             steps {
                 script {   // scripting So, this becomes scripting + declarative
-                    echo "scripting"   
+                    sh 'pwd' // each command is a step --> step 1  
+                    echo "hello"  // step 2
                 }
             }
         }
