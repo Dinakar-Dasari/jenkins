@@ -23,7 +23,7 @@
 
 
 pipeline{
-    agent {label "agent-1"}
+    agent {label "agent-1"}  
     stages{
         stage('Dinakar'){
             steps {
