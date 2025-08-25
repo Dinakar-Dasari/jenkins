@@ -1,3 +1,4 @@
+@Library('shared-library') _  // the name which ever given in managejenkins/configure system/
 // pipeline {
 //     agent { label "agent-11" }  ---> matching label will run this build
 
@@ -32,6 +33,10 @@ pipeline{
                     echo "hello"  // step 2
                 }
             }
+        }
+
+        stage('Helloworld'){
+            Helloworld()
         }
     }
 
