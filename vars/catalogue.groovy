@@ -19,7 +19,8 @@ def call(Map configMap){   //Map is datatype
                     echo "Package version: ${appVersion}"
                     }
                 }
-            stage("install dependencies")
+            }    
+            stage("install dependencies") {
                 steps{
                     script{
                         sh """
