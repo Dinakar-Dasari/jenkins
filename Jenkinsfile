@@ -37,7 +37,7 @@ pipeline{
 
         stage('Helloworld'){
             steps{
-                Helloworld()
+                helloworld()
             }
             
         }
