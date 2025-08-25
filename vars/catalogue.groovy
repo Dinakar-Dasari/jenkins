@@ -48,8 +48,9 @@ def call(Map configMap){   //Map is datatype
 
                 }
             }
+        }    
 
-            post { 
+        post { 
             always { 
                 echo 'I will always say Hello again!'
                 deleteDir()
@@ -62,6 +63,5 @@ def call(Map configMap){   //Map is datatype
             }
         }
 
-        }
     }
 }
