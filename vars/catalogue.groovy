@@ -61,4 +61,3 @@ def call(Map configMap){   //Map is datatype
 
     }
 }
-}
