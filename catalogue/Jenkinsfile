@@ -1,13 +1,10 @@
 @Library('shared-catalogue') _ //name as per label in jenkins UI
 
-pipeline {
-    agent { label "agent-1"}
 
-    def configMap = [
+def configMap = [
     project : "roboshop",
     component: "catalogue"
-    ]
+]
 
-    catalogue(configMap)
-
-}    
+catalogue(configMap)
+  
