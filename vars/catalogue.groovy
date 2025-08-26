@@ -14,9 +14,9 @@ def call(Map configMap){   //Map is datatype
             stage("build"){
                 steps{
                     script {
-                    def packageJson = readJSON file: 'package.json'     
-                    appVersion = packageJson.version
-                    echo "Package version: ${appVersion}"
+                        def packageJson = readJSON file: 'package.json'     
+                        appVersion = packageJson.version
+                        echo "Package version: ${appVersion}"
                     }
                 }
             }    
